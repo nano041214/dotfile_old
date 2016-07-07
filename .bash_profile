@@ -16,6 +16,9 @@ alias gbd='git branch -d'
 # rails
 alias bx='bundle exec'
 
+# xcode
+alias ow='open *.xcworkspace'
+
 # Get local profile (not shared across machines)
 if [ -f "$HOME/.local_profile.bash" ]; then
         source "$HOME/.local_profile.bash"
