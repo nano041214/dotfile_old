@@ -27,4 +27,4 @@ fi
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 
-source ~/.git-completion.bash
+source .git-completion.bash
