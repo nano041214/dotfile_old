@@ -1,2 +1,2 @@
-# nano's podfile
+# nano's dotfile
 
