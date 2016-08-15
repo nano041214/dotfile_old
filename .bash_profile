@@ -11,6 +11,7 @@ alias phq='cd $(ghq list -p | peco)'
 # git commands
 alias g='git'
 alias gcb='git checkout -b'
+alias gbc='git checkout -b'
 alias gbd='git branch -d'
 
 # rails
