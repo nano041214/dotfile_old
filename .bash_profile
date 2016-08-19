@@ -19,6 +19,7 @@ alias bx='bundle exec'
 
 # xcode
 alias ow='open *.xcworkspace'
+alias op='open *.xcodeproj'
 
 # Get local profile (not shared across machines)
 if [ -f "$HOME/.local_profile.bash" ]; then
