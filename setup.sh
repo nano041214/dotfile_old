@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=(.bashrc .bash_profile .gitconfig .git-completion.bash)
+DOT_FILES=(.bashrc .bash_profile .gitconfig .git-completion.bash .oh-my-zsh .zsh-update .zsh_history .zshrc)
 
 for file in ${DOT_FILES[@]}
 do
