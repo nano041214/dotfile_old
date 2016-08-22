@@ -107,3 +107,12 @@ export PATH=$PATH:$GOPATH/bin
 if [ -f "$HOME/.local_profile.zsh" ]; then
         source "$HOME/.local_profile.zsh"
 fi
+
+case "${OSTYPE}" in
+freebsd*|darwin*)
+    alias ls="ls -G -w"
+    ;;
+linux*)
+    alias ls="ls --color"
+    ;;
+esac
