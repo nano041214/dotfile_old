@@ -85,3 +85,25 @@ source $ZSH/oh-my-zsh.sh
 
 # aliase
 alias ls='ls -a'
+
+# peco
+alias pv='vim `find . | peco`'
+alias pcd='cd $(ghq list -p |peco)'
+alias pco='git checkout `git branch | peco`'
+alias phq='cd $(ghq list -p | peco)'
+
+# rails
+alias bx='bundle exec'
+
+# xcode
+alias ow='open *.xcworkspace'
+alias op='open *.xcodeproj'
+
+# Go path
+export GOPATH=$HOME
+export PATH=$PATH:$GOPATH/bin
+
+# Get local profile (not shared across machines)
+if [ -f "$HOME/.local_profile.zsh" ]; then
+        source "$HOME/.local_profile.zsh"
+fi
