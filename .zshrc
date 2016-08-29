@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/naomi-hidaka/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -84,7 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # aliase
-alias ls='ls -a'
+alias la='ls -a'
+alias lsa='ls -la'
 
 # peco
 alias pv='vim `find . | peco`'
@@ -110,7 +111,7 @@ fi
 
 case "${OSTYPE}" in
 freebsd*|darwin*)
-    alias ls="ls -G -w"
+    alias ls="ls -G"
     ;;
 linux*)
     alias ls="ls --color"
