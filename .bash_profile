@@ -1,3 +1,7 @@
+# alias for tig
+
+alias t='tig'
+
 # file or directory search
 
 alias ls='ls -a'

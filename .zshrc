@@ -86,6 +86,10 @@ source $ZSH/oh-my-zsh.sh
 # aliase
 alias ls='ls -a'
 
+# aliase for tig
+alias t='tig'
+alias tst='tig status'
+
 # peco
 alias pv='vim `find . | peco`'
 alias pcd='cd $(ghq list -p |peco)'
