@@ -1,3 +1,6 @@
+# Torch
+export PATH=$PATH/Users/hidakanaomi/torch/install/bin/th
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -117,3 +120,6 @@ linux*)
     alias ls="ls --color"
     ;;
 esac
+
+
+. /Users/hidakanaomi/torch/install/bin/torch-activate
