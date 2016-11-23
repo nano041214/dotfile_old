@@ -1,6 +1,10 @@
 # Torch
 export PATH=$PATH/Users/hidakanaomi/torch/install/bin/th
 
+# CUDA
+export PATH=/Developer/NVIDIA/CUDA-8.0/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib:$DYLD_LIBRARY_PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
