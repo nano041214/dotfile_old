@@ -93,10 +93,13 @@ source $ZSH/oh-my-zsh.sh
 # aliase
 alias la='ls -a'
 alias lsa='ls -la'
+<<<<<<< HEAD
 
 # aliase for tig
 alias t='tig'
 alias tst='tig status'
+=======
+>>>>>>> mymac
 
 # peco
 alias pv='vim `find . | peco`'
