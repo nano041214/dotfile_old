@@ -1,5 +1,12 @@
+# Torch
+export PATH=$PATH/Users/hidakanaomi/torch/install/bin/th
+
+# CUDA
+export PATH=/Developer/NVIDIA/CUDA-8.0/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib:$DYLD_LIBRARY_PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/naomi-hidaka/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -84,7 +91,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # aliase
-alias ls='ls -a'
+alias la='ls -a'
+alias lsa='ls -la'
 
 # aliase for tig
 alias t='tig'
@@ -114,9 +122,27 @@ fi
 
 case "${OSTYPE}" in
 freebsd*|darwin*)
-    alias ls="ls -G -w"
+    alias ls="ls -G"
     ;;
 linux*)
     alias ls="ls --color"
     ;;
 esac
+
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(\history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
+. /Users/hidakanaomi/torch/install/bin/torch-activate
