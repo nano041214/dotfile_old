@@ -36,6 +36,6 @@ lg = log --graph --pretty=oneline --decorate --date=short --abbrev-commit --bran
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [merge "mergepbx"]
-	name = Xcode project files merger
-	driver = mergepbx %O %A %B
-	note = auto-generated configuration by `cpad manifest ios`
+  name = Xcode project files merger
+  driver = mergepbx %O %A %B
+  note = auto-generated configuration by `cpad2 upgrade`

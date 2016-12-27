@@ -34,3 +34,4 @@ export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 
 source .git-completion.bash
+source /Users/naomi-hidaka/.cpad2/profile
