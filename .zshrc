@@ -127,3 +127,4 @@ esac
 
 
 . /Users/hidakanaomi/torch/install/bin/torch-activate
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
