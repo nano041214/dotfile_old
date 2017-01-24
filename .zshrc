@@ -2,6 +2,10 @@
 
 export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
+# For Android SDK
+
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+
 # Torch
 export PATH=$PATH/Users/hidakanaomi/torch/install/bin/th
 
