@@ -29,3 +29,7 @@ lg = log --graph --pretty=oneline --decorate --date=short --abbrev-commit --bran
 
 [ghq]
 	root = ~/src
+[merge "mergepbx"]
+  name = Xcode project files merger
+  driver = mergepbx %O %A %B
+  note = auto-generated configuration by `cpad2 upgrade`

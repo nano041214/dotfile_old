@@ -1,3 +1,7 @@
+# For Java
+
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+
 # Torch
 export PATH=$PATH/Users/hidakanaomi/torch/install/bin/th
 
