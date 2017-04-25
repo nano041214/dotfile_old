@@ -111,6 +111,7 @@ alias gcb='git checkout -b'
 alias g='git'
 alias gbd='git branch -d'
 alias gbdd="git branch -d $(git branch --merged | grep -v master | grep -v '*')"
+alias gcm='git commit -m'
 
 # alias for grep
 alias gr='grep'
