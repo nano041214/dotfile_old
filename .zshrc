@@ -98,13 +98,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# aliase
+# alias
 alias la='ls -a'
 alias lsa='ls -la'
 
-# aliase for tig
+# alias for tig
 alias t='tig'
 alias tst='tig status'
+
+# alias for git
+alias gcb='git checkout -b'
+alias g='git'
+alias gbd='git branch -d'
+alias gbdd="git branch -d $(git branch --merged | grep -v master | grep -v '*')"
+
+# alias for grep
+alias gr='grep'
+alias gv='grep -v'
 
 # peco
 alias pv='vim `find . | peco`'
