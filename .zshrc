@@ -6,9 +6,6 @@ export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
-# Torch
-export PATH=$PATH/Users/hidakanaomi/torch/install/bin/th
-
 # CUDA
 export PATH=/Developer/NVIDIA/CUDA-8.0/bin:$PATH
 export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-8.0/lib:$DYLD_LIBRARY_PATH
@@ -21,6 +18,10 @@ export ZSH=~/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+
+# autoload
+autoload zmv
+alias zmv='noglob zmv'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -163,5 +164,3 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
-. /Users/hidakanaomi/torch/install/bin/torch-activate
