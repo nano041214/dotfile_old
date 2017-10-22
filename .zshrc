@@ -140,6 +140,8 @@ if [ -f "$HOME/.local_profile.zsh" ]; then
         source "$HOME/.local_profile.zsh"
 fi
 
+setopt nonomatch
+
 case "${OSTYPE}" in
 freebsd*|darwin*)
     alias ls="ls -G"
